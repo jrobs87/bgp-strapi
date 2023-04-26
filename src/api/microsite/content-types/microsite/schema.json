@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "microsites",
+  "info": {
+    "singularName": "microsite",
+    "pluralName": "microsites",
+    "displayName": "Microsites",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "microsites"
+    }
+  }
+}

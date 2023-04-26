@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "products"
+    },
+    "microsites": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::microsite.microsite",
+      "mappedBy": "products"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "qa": {
+      "type": "component",
+      "repeatable": true,
+      "component": "widgets.accordian"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "modules.header"
+    },
+    "preview": {
+      "type": "json"
+    },
+    "benefits": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::benefit.benefit",
+      "inversedBy": "products"
+    }
+  }
+}

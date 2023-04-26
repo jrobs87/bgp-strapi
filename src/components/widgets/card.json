@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_widget_cards",
+  "info": {
+    "displayName": "card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "excerpt": {
+      "type": "text"
+    }
+  }
+}

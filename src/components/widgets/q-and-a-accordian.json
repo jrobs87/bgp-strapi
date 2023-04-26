@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_widgets_q_and_a_accordians",
+  "info": {
+    "displayName": "Q&A Accordian"
+  },
+  "options": {},
+  "attributes": {
+    "QA": {
+      "type": "component",
+      "repeatable": true,
+      "component": "widgets.accordian"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tags",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "tags"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page.page",
+      "mappedBy": "tags"
+    },
+    "benefits": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::benefit.benefit",
+      "mappedBy": "tags"
+    }
+  }
+}

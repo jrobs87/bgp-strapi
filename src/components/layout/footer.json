@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_modules_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    }
+  }
+}

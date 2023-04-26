@@ -1,0 +1,36 @@
+{
+  "name": "bgp-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@notum-cz/strapi-plugin-content-versioning": "^0.4.7",
+    "@strapi/plugin-i18n": "4.9.1",
+    "@strapi/plugin-users-permissions": "4.9.1",
+    "@strapi/strapi": "4.9.1",
+    "better-sqlite3": "8.0.1",
+    "esbuild": "^0.17.17",
+    "pg": "^8.10.0",
+    "pg-connection-string": "^2.5.0",
+    "strapi-plugin-navigation": "^2.2.7",
+    "strapi-plugin-populate-deep": "^2.0.0",
+    "strapi-plugin-preview-button": "^1.1.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "940ec35f-0e9d-4f54-9448-fbe886e224b5"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
